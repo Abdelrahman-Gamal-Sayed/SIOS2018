@@ -1,0 +1,126 @@
+﻿<Window x:Class="WpfApplication2.reprep"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication2"
+        mc:Ignorable="d"
+        Title="reprep" Height="613.524" Width="1150.484" WindowStartupLocation="CenterScreen">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="137*"/>
+            <RowDefinition Height="194*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="238*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="viewdetails" Grid.Column="1" HorizontalAlignment="Left" Margin="11,69,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="252" Width="1109" Grid.Row="1" IsReadOnly="True"/>
+        <Label x:Name="label" Content="تجاوزات في خدمات الأدوية " HorizontalAlignment="Left" Margin="364,7,0,0" VerticalAlignment="Top" Width="265" FontSize="20" Grid.Column="2" RenderTransformOrigin="0.5,0.5" FlowDirection="RightToLeft">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-3"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="label1_Copy8" Content="رقم الشركة" HorizontalAlignment="Left" Margin="1037,103,0,0" VerticalAlignment="Top" Width="65" Grid.Column="2"/>
+        <Label x:Name="label1_Copy6" Content="رقم الكارت" HorizontalAlignment="Left" Margin="1037,144,0,67" Width="72" Grid.Column="2" Height="30"/>
+        <Button x:Name="btnExite" Content="خروج" HorizontalAlignment="Left" Margin="10,194,0,0" VerticalAlignment="Top" Width="75" Click="btnExite_Click" TabIndex="14" Grid.Column="2"/>
+        <Button x:Name="btnPrint" Content="طباعة" HorizontalAlignment="Left" Margin="10,148,0,0" VerticalAlignment="Top" Width="75" Click="btnPrint_Click" TabIndex="13" Grid.Column="2" RenderTransformOrigin="0.473,0.205"/>
+        <ComboBox x:Name="cbxScoundTyp" HorizontalAlignment="Left" Margin="483,196,0,0" VerticalAlignment="Top" Width="161" TabIndex="11" Grid.Column="2" SelectionChanged="cbxScoundTyp_SelectionChanged">
+            <ComboBoxItem Content="ALL"/>
+            <ComboBoxItem Content="Daily"/>
+            <ComboBoxItem Content="Monthly"/>
+            <ComboBoxItem Content="Chronic"/>
+        </ComboBox>
+        <ComboBox x:Name="cbxReportTyp" HorizontalAlignment="Left" Margin="651,196,0,0" VerticalAlignment="Top" Width="161" TabIndex="12" Grid.Column="2" SelectionChanged="cbxReportTyp_SelectionChanged">
+            <ComboBoxItem Content="Details"/>
+            <ComboBoxItem Content="Summary"/>
+
+        </ComboBox>
+        <ComboBox  ItemsSource="{Binding}" x:Name="cbxEndCompNum" HorizontalAlignment="Left" Margin="585,103,0,0" VerticalAlignment="Top" Width="161" IsEditable="True" DropDownClosed="cbxEndCompNum_DropDownClosed" SelectionChanged="cbxEndCompNum_SelectionChanged" TabIndex="5" Grid.Column="2" KeyDown="cbxStartCompNum_KeyDown" Height="20">
+            <TextSearch.TextPath>C_COMP_ID</TextSearch.TextPath>
+            <ComboBox.ItemTemplate >
+                <DataTemplate>
+                    <TextBlock Text="{Binding C_COMP_ID}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <ComboBox ItemsSource="{Binding}" x:Name="cbxEndCardNum" HorizontalAlignment="Left" Margin="585,144,0,0" VerticalAlignment="Top" Width="161" Height="20" IsEditable="True" TabIndex="9" Grid.Column="2" KeyDown="cbxStartCompNum_KeyDown">
+            <TextSearch.TextPath>CARD_ID</TextSearch.TextPath>
+            <ComboBox.ItemTemplate >
+                <DataTemplate>
+                    <TextBlock Text="{Binding CARD_ID}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <ComboBox ItemsSource="{Binding}" x:Name="cbxStartCompNum" HorizontalAlignment="Left" Margin="818,103,0,0" VerticalAlignment="Top" Width="159" IsEditable="True" SelectionChanged="cbxStartCompNum_SelectionChanged" TabIndex="4" Grid.Column="2" KeyDown="cbxStartCompNum_KeyDown" >
+            <TextSearch.TextPath>C_COMP_ID</TextSearch.TextPath>
+            <ComboBox.ItemTemplate >
+                <DataTemplate>
+                    <TextBlock Text="{Binding C_COMP_ID}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <Label x:Name="label1_Copy" Content="إلى" HorizontalAlignment="Left" Margin="775,144,0,0" VerticalAlignment="Top" Width="30" Grid.Column="2" RenderTransformOrigin="0.867,-1.095"/>
+        <ComboBox ItemsSource="{Binding}" x:Name="cbxStartCardNum"  HorizontalAlignment="Left" Margin="818,144,0,0" VerticalAlignment="Top" Width="161" Height="20" IsEditable="True" TabIndex="9" Grid.Column="2">
+            <TextSearch.TextPath>CARD_ID</TextSearch.TextPath>
+            <ComboBox.ItemTemplate >
+                <DataTemplate>
+                    <TextBlock Text="{Binding CARD_ID}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <Label x:Name="label1_Copy2" Content="إلى" HorizontalAlignment="Left" Margin="775,103,0,0" VerticalAlignment="Top" Width="30" Grid.Column="2" RenderTransformOrigin="0.867,-1.095"/>
+        <Label x:Name="label1_Copy9" Content="من" HorizontalAlignment="Left" Margin="994,103,0,0" VerticalAlignment="Top" Width="25" Grid.Column="2" RenderTransformOrigin="0.867,-1.095"/>
+        <Label x:Name="label1_Copy11" Content="من" HorizontalAlignment="Left" Margin="994,144,0,0" VerticalAlignment="Top" Width="25" Grid.Column="2" RenderTransformOrigin="0.867,-1.095"/>
+        <Canvas  >
+
+            <RadioButton x:Name="smallamount" Content="اصغر من" FlowDirection="RightToLeft" Checked="smallamount_Checked" Unchecked="smallamount_Unchecked" Canvas.Left="384" Canvas.Top="103"/>
+            <RadioButton x:Name="largeamount" Content="اكبر من" FlowDirection="RightToLeft" IsChecked="True" Canvas.Left="446" Canvas.Top="103" />
+            <Label x:Name="labl1" Content="القيمة" FlowDirection="RightToLeft" FontStyle="Italic" FontWeight="Bold" FontFamily="SimSun" Canvas.Left="498" Canvas.Top="103" Height="26" />
+            <TextBox x:Name="txtakbermnamount" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" KeyDown="cbxStartCompNum_KeyDown" Canvas.Left="240" Canvas.Top="103"/>
+            <TextBox x:Name="txtas8urmnamount" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Visibility="Hidden" KeyDown="cbxStartCompNum_KeyDown" Canvas.Left="240" Canvas.Top="103"/>
+
+        </Canvas>
+        <Canvas   >
+
+            <RadioButton x:Name="smallcount" Content="اصغر من" FlowDirection="RightToLeft" Checked="smallcount_Checked" Unchecked="smallcount_Unchecked" Canvas.Left="384" Canvas.Top="144"/>
+            <RadioButton x:Name="largecount" Content="اكبر من" FlowDirection="RightToLeft" IsChecked="True" Canvas.Left="446" Canvas.Top="144" />
+            <Label x:Name="labl2" Content="العدد" FlowDirection="RightToLeft" FontStyle="Italic" FontWeight="Bold" FontFamily="SimSun" Canvas.Left="499" Canvas.Top="144" />
+            <TextBox x:Name="txtakbermncount" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" KeyDown="cbxStartCompNum_KeyDown" Canvas.Left="240" Canvas.Top="144"/>
+            <TextBox x:Name="txtas8urmncount" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Visibility="Hidden" KeyDown="cbxStartCompNum_KeyDown"  Canvas.Left="240" Canvas.Top="144"/>
+
+        </Canvas>
+        <Label x:Name="label1_Copy1" Content="ترتيب حسب" HorizontalAlignment="Left" Margin="389,194,0,0" VerticalAlignment="Top" Width="74" Grid.Column="2"/>
+        <ComboBox x:Name="Sortby" HorizontalAlignment="Left" Margin="195,196,0,0" VerticalAlignment="Top" Width="162" TabIndex="12" Grid.Column="2">
+            <ComboBoxItem Content="رقم الكارت" IsSelected="True" />
+            <ComboBoxItem Content="القيمة"/>
+            <ComboBoxItem Content="العدد"/>
+        </ComboBox>
+        <DataGrid x:Name="viewall" Grid.Column="1" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="252" Width="1110" IsReadOnly="True" Grid.Row="1" MouseDoubleClick="btnviewdetails_Click"/>
+        <DatePicker x:Name="startdate" HorizontalAlignment="Left" Margin="818,55,0,0" VerticalAlignment="Top" Width="159" Text="1/1/2001" TabIndex="0" Grid.Column="2" />
+        <DatePicker x:Name="enddate" HorizontalAlignment="Left" Margin="587,55,0,0" VerticalAlignment="Top" Width="159" Text="1/1/2018" TabIndex="1" Grid.Column="2"/>
+        <Label x:Name="label1_Copy3" Content="من" HorizontalAlignment="Left" Margin="994,55,0,0" VerticalAlignment="Top" Width="25" Grid.Column="2" RenderTransformOrigin="0.867,-1.095"/>
+        <Label x:Name="label1_Copy5" Content="إلى" HorizontalAlignment="Left" Margin="775,55,0,0" VerticalAlignment="Top" Width="30" Grid.Column="2" RenderTransformOrigin="0.867,-1.095"/>
+        <Label x:Name="label1_Copy7" Content="التاريخ" HorizontalAlignment="Left" Margin="1037,55,0,0" VerticalAlignment="Top" Width="60" Grid.Column="2"/>
+        <Button x:Name="btnviewdetails" Content="عرض التفاصيل" HorizontalAlignment="Left" Margin="945,38,0,0" VerticalAlignment="Top" Width="93" Click="btnviewdetails_Click" TabIndex="13" Grid.Column="2" RenderTransformOrigin="0.473,0.205" Grid.Row="1"/>
+        <Button x:Name="btnprintdetails" Content="طباعة" HorizontalAlignment="Left" Margin="846,38,0,0" VerticalAlignment="Top" Width="90" TabIndex="13" Grid.Column="2" RenderTransformOrigin="0.473,0.205" Grid.Row="1" Click="btnprintdetails_Click"/>
+        <Button x:Name="btnback" Content="رجوع" HorizontalAlignment="Left" Margin="945,38,0,0" VerticalAlignment="Top" Width="93" Click="btnback_Click" TabIndex="13" Grid.Column="2" RenderTransformOrigin="0.473,0.205" Grid.Row="1"/>
+        <Label x:Name="showcard" Content="" HorizontalAlignment="Left" Margin="36,34,0,0" VerticalAlignment="Top" Width="134" Grid.Column="2" Grid.Row="1" FontWeight="Bold"/>
+        <Label x:Name="showname" Content="" HorizontalAlignment="Left" Margin="174,34,0,0" VerticalAlignment="Top" Width="267" Grid.Column="2" Grid.Row="1" FontWeight="Bold"/>
+        <CheckBox x:Name="LastContract" Content="Last Contract" Grid.Column="2" HorizontalAlignment="Left" Margin="420,55,0,0" VerticalAlignment="Top" FlowDirection="RightToLeft" Checked="LastContract_Checked" Unchecked="LastContract_Unchecked"/>
+        <Label x:Name="label1_Copy10" Content="نوع التقرير" HorizontalAlignment="Left" Margin="953,194,0,0" VerticalAlignment="Top" Width="74" Grid.Column="2"/>
+        <ComboBox x:Name="cbxMainTyp" HorizontalAlignment="Left" Margin="820,196,0,0" VerticalAlignment="Top" Width="124" TabIndex="12" Grid.Column="2">
+            <ComboBoxItem Content="Online Live" IsSelected="True"/>
+            <ComboBoxItem Content="Claims"/>
+
+        </ComboBox>
+        <Button x:Name="DisplayAll" Content="عرض" HorizontalAlignment="Left" Margin="10,102,0,0" VerticalAlignment="Top" Width="75" TabIndex="13" Grid.Column="2" RenderTransformOrigin="0.473,0.205" Click="DisplayAll_Click" Visibility="Hidden"/>
+    </Grid>
+
+</Window>

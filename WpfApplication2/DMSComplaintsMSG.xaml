@@ -1,0 +1,50 @@
+﻿<Window x:Class="WpfApplication2.DMSComplaintsMSG"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication2"
+        mc:Ignorable="d"
+        Title="شكوى"  Height="763" Width="1160" Background="#3b5998" >
+    <Grid>
+        <Grid >
+
+            <Grid>
+                <TextBox x:Name="dmsprobtxtsolution" HorizontalAlignment="Left" Height="78" Margin="545,359,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="224" FlowDirection="RightToLeft"/>
+                <Label Content="حل المشكلة" HorizontalAlignment="Left" Margin="803,386,0,0" VerticalAlignment="Top" Height="30" Width="78" FontWeight="Bold"/>
+                <Label x:Name="lablllll" Content="" HorizontalAlignment="Left" Margin="647,31,0,0" VerticalAlignment="Top" Height="30" Width="102" FontWeight="Bold" FlowDirection="RightToLeft"/>
+                <Label x:Name="lablllll_Copy" Content="رقم الشكوى" HorizontalAlignment="Left" Margin="773,31,0,0" VerticalAlignment="Top" Height="30" Width="122" FontWeight="Bold"/>
+                <Label x:Name="lablllll2" Content="" HorizontalAlignment="Left" Margin="241,85,0,0" VerticalAlignment="Top" Height="30" Width="510" FontWeight="Bold" FlowDirection="RightToLeft"/>
+                <Label x:Name="lablllll_Copy2" Content="سبب الشكوى" HorizontalAlignment="Left" Margin="773,85,0,0" VerticalAlignment="Top" Height="30" Width="122" FontWeight="Bold"/>
+                <Label x:Name="lablllll3" Content="" HorizontalAlignment="Left" Margin="329,143,0,0" VerticalAlignment="Top" Height="30" Width="440" FontWeight="Bold" FlowDirection="RightToLeft"/>
+                <Label x:Name="lablllll_Copy4" Content="القسم" HorizontalAlignment="Left" Margin="803,214,0,0" VerticalAlignment="Top" Height="30" Width="51" FontWeight="Bold"/>
+
+                <Button x:Name="dmsbtnSave" Content="حفظ" Margin="416,386,667,308" Click="dmsbtnSave_Click" />
+                <Button Content="خروج"   HorizontalAlignment="Left" Margin="309,386,0,0" VerticalAlignment="Top" Width="69" Height="38" Click="Button_Click"/>
+                <Label x:Name="lablllll5" Content="" HorizontalAlignment="Left" Margin="456,257,0,0" VerticalAlignment="Top" Height="30" Width="295" FontWeight="Bold" FlowDirection="RightToLeft"/>
+                <Label x:Name="lablllll_Copy3" Content="الموظف" HorizontalAlignment="Left" Margin="790,257,0,0" VerticalAlignment="Top" Height="30" Width="64" FontWeight="Bold"/>
+                <Label x:Name="lablllll6" Content="" HorizontalAlignment="Left" Margin="241,311,0,0" VerticalAlignment="Top" Height="30" Width="510" FontWeight="Bold" FlowDirection="RightToLeft"/>
+                <Label x:Name="lablllll_Copy5" Content="اسم الدكتور" HorizontalAlignment="Left" Margin="787,311,0,0" VerticalAlignment="Top" Height="30" Width="67" FontWeight="Bold"/>
+                <Label x:Name="lablllll4" Content="" HorizontalAlignment="Left" Margin="309,214,0,0" VerticalAlignment="Top" Height="30" Width="440" FontWeight="Bold" FlowDirection="RightToLeft"/>
+                <Label x:Name="lablllll_Copy6" Content="وصف الشكوى" HorizontalAlignment="Left" Margin="769,143,0,0" VerticalAlignment="Top" Height="30" Width="122" FontWeight="Bold"/>
+
+
+
+
+            </Grid>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </Grid>
+    </Grid>
+</Window>

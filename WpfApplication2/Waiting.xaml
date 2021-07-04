@@ -1,0 +1,12 @@
+﻿<Window x:Class="WpfApplication2.Waiting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication2"
+        mc:Ignorable="d"
+        Title="Waiting" Height="235.385" Width="565.385" WindowStartupLocation="CenterScreen" Cursor="Wait" ShowInTaskbar="False" WindowStyle="None">
+    <Grid>
+        <MediaElement x:Name="myGif" MediaEnded="myGif_MediaEnded" UnloadedBehavior="Manual"   Source="file://C:\Users\Ahmed Saad\Downloads\Compressed\LoadingControl\LoadingControl\LoadingControl\Images\Loading.gif"   LoadedBehavior="Play" Stretch="None"/>
+    </Grid>
+</Window>

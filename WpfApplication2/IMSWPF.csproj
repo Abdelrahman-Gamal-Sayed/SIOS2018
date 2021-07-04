@@ -1,0 +1,3549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{164A91E8-C855-4104-AD8A-A71ACE3BBB99}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WpfApplication2</RootNamespace>
+    <AssemblyName>Sios</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <PublishUrl>Z:\EXE TEST\JOBA\test27-5\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Background</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Sios</ProductName>
+    <PublisherName>Abdelrahman</PublisherName>
+    <SuiteName>01150305590</SuiteName>
+    <MinimumRequiredVersion>1.0.0.7</MinimumRequiredVersion>
+    <ApplicationRevision>78</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4DE4761BA14EAA0A7D625C6E194CC70A51A2E1B3</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>IMSWPF_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Notifcation.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>WpfApplication2.App</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BarcodeLib">
+      <HintPath>..\..\..\..\Downloads\Compressed\barcode_bin\BarcodeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SIOS V2.9.2 Final joba\WpfApplication2\bin\Debug\CrystalDecisions.CrystalReports.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SIOS V2.9.2 Final joba\WpfApplication2\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ClientDoc">
+      <HintPath>..\..\..\SIOS V2.9.2 Final joba\WpfApplication2\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommLayer">
+      <HintPath>..\..\..\SIOS V2.9.2 Final joba\WpfApplication2\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonControls">
+      <HintPath>..\..\..\SIOS V2.9.2 Final joba\WpfApplication2\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonObjectModel">
+      <HintPath>..\..\..\SIOS V2.9.2 Final joba\WpfApplication2\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Controllers">
+      <HintPath>..\..\..\SIOS V2.9.2 Final joba\WpfApplication2\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CubeDefModel">
+      <HintPath>..\..\..\SIOS V2.9.2 Final joba\WpfApplication2\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataDefModel">
+      <HintPath>..\..\..\SIOS V2.9.2 Final joba\WpfApplication2\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataSetConversion">
+      <HintPath>..\..\..\SIOS V2.9.2 Final joba\WpfApplication2\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ObjectFactory">
+      <HintPath>..\..\..\SIOS V2.9.2 Final joba\WpfApplication2\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Prompting">
+      <HintPath>..\..\..\SIOS V2.9.2 Final joba\WpfApplication2\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ReportDefModel">
+      <HintPath>..\..\..\SIOS V2.9.2 Final joba\WpfApplication2\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.XmlSerialize">
+      <HintPath>..\..\..\SIOS V2.9.2 Final joba\WpfApplication2\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SIOS V2.9.2 Final joba\WpfApplication2\bin\Debug\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SIOS V2.9.2 Final joba\WpfApplication2\bin\Debug\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Web">
+      <HintPath>..\..\..\SIOS V2.9.2 Final joba\WpfApplication2\bin\Debug\CrystalDecisions.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SIOS V2.9.2 Final joba\WpfApplication2\bin\Debug\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <HintPath>..\..\..\SIOS V2.9.2 Final joba\WpfApplication2\bin\Debug\FlashControlV71.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>C:\Users\TM\Desktop\16-92018تلا\Sios 10-9 After Torb\Sios\WpfApplication2\bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.12.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 6.9.12\Assemblies\v4.5\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\ORACLE\Abdelrahman\product\11.2.0\dbhome_1\ODP.NET\bin\2.x\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\3-10\Sios\WpfApplication2\bin\Debug\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="ShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\ShockwaveFlashObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WhatsAppApi, Version=1.0.2.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Whatsapp.NET.1.2.2\lib\WhatsAppApi.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="approveRequest.xaml.cs">
+      <DependentUpon>approveRequest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessLayer\checkdata.cs" />
+    <Compile Include="BusinessLayer\Indemnity\IndemnityData.cs" />
+    <Compile Include="BusinessLayer\Indemnity\IndemnityServices.cs" />
+    <Compile Include="BusinessLayer\Medical Agreement\EmpApprovalData.cs" />
+    <Compile Include="BusinessLayer\Medical Agreement\EmpApprovalServices.cs" />
+    <Compile Include="BusinessLayer\MessangerData.cs" />
+    <Compile Include="BusinessLayer\MessangerServices.cs" />
+    <Compile Include="BusinessLayer\Messenger Confirmation\ConfirMessData.cs" />
+    <Compile Include="BusinessLayer\Messenger Confirmation\ConfirMessServices.cs" />
+    <Compile Include="BusinessLayer\MessengerRequest\MessengerRequestData.cs" />
+    <Compile Include="BusinessLayer\MessengerRequest\MessengerRequestServices.cs" />
+    <Compile Include="BusinessLayer\Moving Messenger\MovingMessData.cs" />
+    <Compile Include="BusinessLayer\Moving Messenger\MovingMessServices.cs" />
+    <Compile Include="BusinessLayer\Notebooks\NoteBookData.cs" />
+    <Compile Include="BusinessLayer\Notebooks\NoteBookServices.cs" />
+    <Compile Include="BusinessLayer\Printing\PrintingData.cs" />
+    <Compile Include="BusinessLayer\Printing\PrintingServices.cs" />
+    <Compile Include="BusinessLayer\ReallocationData.cs" />
+    <Compile Include="BusinessLayer\ReallocationServices.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="CompanyContractWindow.xaml.cs">
+      <DependentUpon>CompanyContractWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmNotebook RequestFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmNotebook RequestFrm.Designer.cs">
+      <DependentUpon>ConfirmNotebook RequestFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContractWindow.xaml.cs">
+      <DependentUpon>ContractWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess.cs" />
+    <Compile Include="Database_test.cs" />
+    <Compile Include="DB - IRS.cs" />
+    <Compile Include="DB_CLOUT.cs" />
+    <Compile Include="db_dms_test.cs" />
+    <Compile Include="DB_NEW.cs" />
+    <Compile Include="DB_TEST.cs" />
+    <Compile Include="DialogResult.cs" />
+    <Compile Include="est3laam.xaml.cs">
+      <DependentUpon>est3laam.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="hrreportmol5sesthlaak.xaml.cs">
+      <DependentUpon>hrreportmol5sesthlaak.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="hrreportnew.xaml.cs">
+      <DependentUpon>hrreportnew.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxSIOS.xaml.cs">
+      <DependentUpon>MessageBoxSIOS.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page3.xaml.cs">
+      <DependentUpon>Page3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="page3English.xaml.cs">
+      <DependentUpon>page3English.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PHONETEXT.cs" />
+    <Compile Include="ReportAG\AG_AuditingAll.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AG_AuditingAll.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportAG\AG_AuditingDIFFRENCE.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AG_AuditingDIFFRENCE.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportAG\AG_AuditingNULL.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AG_AuditingNULL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportAG\AG_AuditingZERO.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AG_AuditingZERO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportAG\AG_List_Of_Advantages.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AG_List_Of_Advantages.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportAG\DataSets\DataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportAG\Motalbaat.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Motalbaat.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportAG\Motalbaat165.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Motalbaat165.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportAG\ReportInd.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportInd.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportAG\ReportIRS.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportIRS.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportAG\ReportLabRayDetails.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportLabRayDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportAG\ReportOnline500118Test.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOnline500118Test.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportAG\Schedule.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Schedule.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportjoba\REPORT_F_TOTAL.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>REPORT_F_TOTAL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportjoba\REPORT_F_TOTAL_main.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>REPORT_F_TOTAL_main.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportjoba\REPORT_F_TOTAL_P2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>REPORT_F_TOTAL_P2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportjoba\REPORT_F_TOTAL_P3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>REPORT_F_TOTAL_P3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportjoba\REPORT_F_TOTAL_P4.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>REPORT_F_TOTAL_P4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportjoba\REPORT_F_TOTAL_P5.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>REPORT_F_TOTAL_P5.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="Reportjoba\REPORT_T_TOTAL.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>REPORT_T_TOTAL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportjoba\REPORT_T_TOTAL_ADD_EMP.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>REPORT_T_TOTAL_ADD_EMP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\PReportEob - Copy.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PReportEob - Copy.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\PReportEobIRS.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PReportEobIRS.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\PReportEobServiceIRS.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PReportEobServiceIRS.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report10NEW.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report10NEW.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report7ONGA.cs">
+      <DependentUpon>Report7ONGA.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportPool.cs">
+      <DependentUpon>ReportPool.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ReportsLayer\Report10NEWGA.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report10NEWGA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report10ON.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report10ON.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report11ON.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report11ON.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report11ONGA.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report11ONGA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report12 - Copy.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report12 - Copy.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report12GA.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report12GA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report12ON.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report12ON.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report13ON.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report13ON.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report13ONGA.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report13ONGA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report14ON.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report14ON.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report14ONGA.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report14ONGA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report1ON.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report1ON.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report1ONGA.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report1ONGA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report2ON.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report2ON.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report2ONGA.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report2ONGA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report4 - Copy.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report4 - Copy.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report4ON.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report4ON.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report4ONGA.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report4ONGA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report6ON.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report6ON.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report6ONGA.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report6ONGA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report7 - Copy %282%29.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report7 - Copy %282%29.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report77.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report77.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report7ONGA-OLD.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report7ONGA-OLD.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report7ONNEW.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report7ONNEW.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportAALoc.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportAALoc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportACLoc.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportACLoc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportADLoc.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportADLoc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportAMLoc.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportAMLoc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportApproval2.cs">
+      <DependentUpon>ReportApproval2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ReportsLayer\PharmNoBatch.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmNoBatch.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\PharmNoBatchDate.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmNoBatchDate.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportApprovalAmt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportApprovalAmt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportApprovalAmtDetails.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportApprovalAmtDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportApprovalByCard.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportApprovalByCard.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportApprovalCardDetails.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportApprovalCardDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportApprovalCompany.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportApprovalCompany.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportApprovalCompanyDetails.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportApprovalCompanyDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportApprovalDate.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportApprovalDate.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportApprovalDateDetails.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportApprovalDateDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportApprovalDateServ.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportApprovalDateServ.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportApprovalDateServDetails.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportApprovalDateServDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportApprovalEditDelete.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportApprovalEditDelete.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportApprovalEditDeleteDetails.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportApprovalEditDeleteDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportApprovalEditDeleteDetails2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportApprovalEditDeleteDetails2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportApprovalold.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportApprovalold.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportApproval.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportApproval.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportApprovalPrv.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportApprovalPrv.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportApprovalPrvDetails.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportApprovalPrvDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportApprovalRecollection.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportApprovalRecollection.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportApprovalRecollectionDetails.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportApprovalRecollectionDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportApprovalReply.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportApprovalReply.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportApprovalReplyDetails.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportApprovalReplyDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportApprovalResdnt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportApprovalResdnt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportApprovalResdntDetails.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportApprovalResdntDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportApprovalServBy.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportApprovalServBy.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportApprovalServByDetails.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportApprovalServByDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportApprovalService.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportApprovalService.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportApprovalServiceDetails.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportApprovalServiceDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportAprov1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportAprov1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportAprov10.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportAprov10.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportAprov11.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportAprov11.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportAprov12.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportAprov12.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportAprov13.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportAprov13.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportAprov14.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportAprov14.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportAprov2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportAprov2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportAprov6.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportAprov6.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportAprov7.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportAprov7.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Reportaub1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportaub1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Reportaub10-2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportaub10-2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Reportaub10.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportaub10.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Reportaub11.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportaub11.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Reportaub12.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportaub12.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Reportaub12ok.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportaub12ok.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Reportaub12oldok.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportaub12oldok.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Reportaub13.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportaub13.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Reportaub14.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportaub14.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Reportaub14New.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportaub14New.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Reportaub2 - Copy.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportaub2 - Copy.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Reportaub2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportaub2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Reportaub3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportaub3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Reportaub4.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportaub4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Reportaub5.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportaub5.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Reportaub6.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportaub6.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Reportaub7.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportaub7.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Reportaub8.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportaub8.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Reportaub9.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportaub9.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportCheckPharm.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportCheckPharm.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportCheckStatus.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportCheckStatus.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportConsMed.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportConsMed.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportDataCheck1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportDataCheck1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportDataCheck2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportDataCheck2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportEndComp11.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportEndComp11.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportEndCompBefore1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportEndCompBefore1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportEobServiceOutIRS.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportEobServiceOutIRS.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Reportget_f_add.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportget_f_add.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Reportget_t_add.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportget_t_add.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Reportget_t_del.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportget_t_del.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Reportget_t_prant.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportget_t_prant.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportINDCheck.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportINDCheck.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportIndCover.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportIndCover.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportIndDetails.cs">
+      <DependentUpon>ReportIndDetails.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportInd.cs">
+      <DependentUpon>ReportInd.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ReportsLayer\CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataDB.cs" />
+    <Compile Include="DataLayer\agents.cs" />
+    <Compile Include="DataLayer\Clients.cs" />
+    <Compile Include="DataLayer\Contracts.cs" />
+    <Compile Include="DataLayer\DBManager2.cs" />
+    <Compile Include="DataLayer\hrClass.cs" />
+    <Compile Include="DataLayer\HRNetwork.cs" />
+    <Compile Include="DataLayer\medicine.cs" />
+    <Compile Include="DataLayer\Reports.cs" />
+    <Compile Include="DataLayer\Stores.cs" />
+    <Compile Include="DB - Copy.cs" />
+    <Compile Include="DB.cs" />
+    <Compile Include="DBManager.cs" />
+    <Compile Include="DeliverNotebookFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeliverNotebookFrm.Designer.cs">
+      <DependentUpon>DeliverNotebookFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DMSComplaintsMSG.xaml.cs" />
+    <Compile Include="fwateer.xaml.cs">
+      <DependentUpon>fwateer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HRComplaintMSG.xaml.cs" />
+    <Compile Include="HrRequest.xaml.cs">
+      <DependentUpon>HrRequest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MessengerConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessengerConfirmation.Designer.cs">
+      <DependentUpon>MessengerConfirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MovingFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovingFrm.Designer.cs">
+      <DependentUpon>MovingFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newMedicineWindow.xaml.cs">
+      <DependentUpon>newMedicineWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page1.xaml.cs">
+      <DependentUpon>Page1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page4.xaml.cs">
+      <DependentUpon>Page4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Password.xaml.cs">
+      <DependentUpon>Password.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Proces.cs" />
+    <Compile Include="Proces2.cs" />
+    <Compile Include="Report.xaml.cs">
+      <DependentUpon>Report.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsLayer\PReportEob.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PReportEob.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\PReportEobService.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PReportEobService.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report10.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report10.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report11.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report11.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report12.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report12.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report13.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report13.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report14.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report14.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report4.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report5.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report5.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report6.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report6.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report7.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report7.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report8.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report8.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Report9.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report9.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportAll - Copy.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportAll - Copy.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportAll.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportAll.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportBatch.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportBatch.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportEmp.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportEmp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportEmpY.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportEmpY.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportEob.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportEob.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportEobServiceOut.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportEobServiceOut.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportHr.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportHr.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportHrIRS.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportHrIRS.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportHrPrv.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportHrPrv.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportHrPrvIRS.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportHrPrvIRS.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportHrPrvSub.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportHrPrvSub.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportHrPrvSubIRS.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportHrPrvSubIRS.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportHrSub.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportHrSub.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportHrSubIRS.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportHrSubIRS.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportIndDetails2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportIndDetails2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportIRS - Copy.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportIRS - Copy.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportIRS.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportIRS.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportLabRayDetails.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportLabRayDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportLabRayDetails2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportLabRayDetails2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportOnline - Copy.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOnline - Copy.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportOnline-copy-2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOnline-copy-2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportOnline.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOnline.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportOnline2 - Copy 1 - Copy.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOnline2 - Copy 1 - Copy.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportOnline2 - Copy 1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOnline2 - Copy 1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportOnline2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOnline2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportOnline500118Test.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOnline500118Test.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportOnlineAllTest.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOnlineAllTest.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportOnlinecopy500114Test.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOnlinecopy500114Test.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportOperationAdd.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOperationAdd.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportOperationAdd2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOperationAdd2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportOperationChangeClass.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOperationChangeClass.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportOperationChangeClass2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOperationChangeClass2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportOperationChangeCostCsentr.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOperationChangeCostCsentr.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportOperationChangeCostCsentr2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOperationChangeCostCsentr2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportOperationChangeName.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOperationChangeName.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportOperationChangeName2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOperationChangeName2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportOperationChangePhoto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOperationChangePhoto.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportOperationChangePhoto2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOperationChangePhoto2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportOperationClose.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOperationClose.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportOperationClose2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOperationClose2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportOperationMissingCard.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOperationMissingCard.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportOperationMissingCard2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOperationMissingCard2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportOperationReActive.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOperationReActive.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportOperationReActive2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOperationReActive2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportOperationReplecmentCard.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOperationReplecmentCard.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportOperationReplecmentCard2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOperationReplecmentCard2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportOperationTransction.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportOperationTransction.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportPrint - Copy %282%29.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportPrint - Copy %282%29.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportPrint - TOP.cs">
+      <DependentUpon>ReportPrint - TOP.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportPrint - Copy.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportPrint - Copy.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportPrintOLD.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportPrintOLD.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportPrintPreview - TOP.cs">
+      <DependentUpon>ReportPrintPreview - TOP.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportPrintPreview.cs">
+      <DependentUpon>ReportPrintPreview.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportPrint2222.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportPrint2222.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportPrintt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportPrintt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportPrintPreview2.cs">
+      <DependentUpon>ReportPrintPreview2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportPrint.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportPrint.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportProviderState1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportProviderState1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportProviderState2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportProviderState2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportAA.cs">
+      <DependentUpon>ReportAA.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportReview.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportReview.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportSA2.cs">
+      <DependentUpon>ReportSA2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportSA - Copy1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportSA - Copy.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportSA.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportSA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportAC.cs">
+      <DependentUpon>ReportAC.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportSA2Loc.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportSA2Loc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportSC.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportSC.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportAD.cs">
+      <DependentUpon>ReportAD.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportSCLoc.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportSCLoc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportSD.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportSD.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportAM.cs">
+      <DependentUpon>ReportAM.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportSDLoc.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportSDLoc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportSM.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportSM.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportSMLoc.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportSMLoc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportStatement - Copy.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportStatement - Copy.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportStatement.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportStatement.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportSummaryBatch - Copy.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportSummaryBatch - Copy.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportSummaryBatch.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportSummaryBatch.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\ReportSummaryBatchPdf.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportSummaryBatchPdf.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reprep.xaml.cs">
+      <DependentUpon>reprep.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Service Request.xaml.cs">
+      <DependentUpon>Service Request.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Summary Window.xaml.cs">
+      <DependentUpon>Summary Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Class1.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="View Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Report.Designer.cs">
+      <DependentUpon>View Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsLayer\Viewall.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Viewall.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLayer\Viewallclaim.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Viewallclaim.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ViewandPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewandPrint.Designer.cs">
+      <DependentUpon>ViewandPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Waiting.xaml.cs">
+      <DependentUpon>Waiting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
+    <Page Include="approveRequest.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CompanyContractWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ContractWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DMSComplaintsMSG.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="est3laam.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fwateer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HRComplaintMSG.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="hrreportmol5sesthlaak.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HrRequest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="hrreportnew.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MessageBoxSIOS.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="newMedicineWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Page1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Page3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="page3English.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Page4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Password.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Report.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="reprep.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Service Request.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Summary Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Waiting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="ConfirmNotebook RequestFrm.resx">
+      <DependentUpon>ConfirmNotebook RequestFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportAG\AG_AuditingAll.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AG_AuditingAll.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportAG\AG_AuditingDIFFRENCE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AG_AuditingDIFFRENCE.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportAG\AG_AuditingNULL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AG_AuditingNULL.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportAG\AG_AuditingZERO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AG_AuditingZERO.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportAG\AG_List_Of_Advantages.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AG_List_Of_Advantages.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportAG\Motalbaat.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Motalbaat.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportAG\Motalbaat165.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Motalbaat165.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportAG\ReportInd.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportInd.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportAG\ReportIRS.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportIRS.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportAG\ReportLabRayDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportLabRayDetails.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportAG\ReportOnline500118Test.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOnline500118Test.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportAG\Schedule.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Schedule.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportjoba\REPORT_F_TOTAL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>REPORT_F_TOTAL.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportjoba\REPORT_F_TOTAL_main.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>REPORT_F_TOTAL_main.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportjoba\REPORT_F_TOTAL_P2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>REPORT_F_TOTAL_P2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportjoba\REPORT_F_TOTAL_P3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>REPORT_F_TOTAL_P3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportjoba\REPORT_F_TOTAL_P4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>REPORT_F_TOTAL_P4.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportjoba\REPORT_F_TOTAL_P5.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>REPORT_F_TOTAL_P5.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportjoba\REPORT_T_TOTAL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>REPORT_T_TOTAL.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportjoba\REPORT_T_TOTAL_ADD_EMP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>REPORT_T_TOTAL_ADD_EMP.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\PReportEob - Copy.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PReportEob - Copy.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\PReportEobIRS.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PReportEobIRS.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\PReportEobServiceIRS.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PReportEobServiceIRS.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report10NEW.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report10NEW.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report7ONGA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report7ONGA.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportPool.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportPool.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report10NEWGA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report10NEWGA.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report10ON.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report10ON.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report11ON.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report11ON.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report11ONGA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report11ONGA.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report12 - Copy.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report12 - Copy.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report12GA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report12GA.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report12ON.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report12ON.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report13ON.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report13ON.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report13ONGA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report13ONGA.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report14ON.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report14ON.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report14ONGA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report14ONGA.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report1ON.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report1ON.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report1ONGA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report1ONGA.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report2ON.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report2ON.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report2ONGA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report2ONGA.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report4 - Copy.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report4 - Copy.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report4ON.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report4ON.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report4ONGA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report4ONGA.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report6ON.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report6ON.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report6ONGA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report6ONGA.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report7 - Copy %282%29.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report7 - Copy %282%29.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report77.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report77.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report7ONGA-OLD.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report7ONGA-OLD.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report7ONNEW.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report7ONNEW.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportAALoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAALoc.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportACLoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportACLoc.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportADLoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportADLoc.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportAMLoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAMLoc.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportApproval2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportApproval2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\PharmNoBatch.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PharmNoBatch.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\PharmNoBatchDate.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PharmNoBatchDate.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportApprovalAmt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportApprovalAmt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportApprovalAmtDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportApprovalAmtDetails.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportApprovalByCard.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportApprovalByCard.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportApprovalCardDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportApprovalCardDetails.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportApprovalCompany.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportApprovalCompany.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportApprovalCompanyDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportApprovalCompanyDetails.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportApprovalDate.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportApprovalDate.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportApprovalDateDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportApprovalDateDetails.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportApprovalDateServ.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportApprovalDateServ.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportApprovalDateServDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportApprovalDateServDetails.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportApprovalEditDelete.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportApprovalEditDelete.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportApprovalEditDeleteDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportApprovalEditDeleteDetails.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportApprovalEditDeleteDetails2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportApprovalEditDeleteDetails2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportApprovalold.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportApprovalold.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportApproval.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportApproval.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportApprovalPrv.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportApprovalPrv.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportApprovalPrvDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportApprovalPrvDetails.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportApprovalRecollection.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportApprovalRecollection.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportApprovalRecollectionDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportApprovalRecollectionDetails.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportApprovalReply.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportApprovalReply.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportApprovalReplyDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportApprovalReplyDetails.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportApprovalResdnt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportApprovalResdnt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportApprovalResdntDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportApprovalResdntDetails.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportApprovalServBy.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportApprovalServBy.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportApprovalServByDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportApprovalServByDetails.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportApprovalService.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportApprovalService.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportApprovalServiceDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportApprovalServiceDetails.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportAprov1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAprov1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportAprov10.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAprov10.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportAprov11.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAprov11.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportAprov12.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAprov12.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportAprov13.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAprov13.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportAprov14.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAprov14.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportAprov2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAprov2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportAprov6.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAprov6.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportAprov7.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAprov7.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Reportaub1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reportaub1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Reportaub10-2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reportaub10-2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Reportaub10.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reportaub10.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Reportaub11.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reportaub11.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Reportaub12.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reportaub12.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Reportaub12ok.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reportaub12ok.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Reportaub12oldok.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reportaub12oldok.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Reportaub13.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reportaub13.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Reportaub14.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reportaub14.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Reportaub14New.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reportaub14New.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Reportaub2 - Copy.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reportaub2 - Copy.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Reportaub2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reportaub2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Reportaub3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reportaub3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Reportaub4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reportaub4.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Reportaub5.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reportaub5.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Reportaub6.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reportaub6.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Reportaub7.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reportaub7.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Reportaub8.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reportaub8.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Reportaub9.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reportaub9.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportCheckPharm.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportCheckPharm.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportCheckStatus.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportCheckStatus.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportConsMed.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportConsMed.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportDataCheck1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportDataCheck1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportDataCheck2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportDataCheck2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportEndComp11.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportEndComp11.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportEndCompBefore1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportEndCompBefore1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportEobServiceOutIRS.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportEobServiceOutIRS.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Reportget_f_add.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reportget_f_add.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Reportget_t_add.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reportget_t_add.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Reportget_t_del.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reportget_t_del.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Reportget_t_prant.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reportget_t_prant.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportINDCheck.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportINDCheck.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportIndCover.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportIndCover.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportIndDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportIndDetails.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportInd.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportInd.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeliverNotebookFrm.resx">
+      <DependentUpon>DeliverNotebookFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessengerConfirmation.resx">
+      <DependentUpon>MessengerConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovingFrm.resx">
+      <DependentUpon>MovingFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\PReportEob.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PReportEob.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\PReportEobService.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PReportEobService.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report10.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report10.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report11.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report11.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report12.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report12.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report13.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report13.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report14.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report14.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report4.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report5.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report5.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report6.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report6.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report7.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report7.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report8.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report8.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Report9.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report9.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportAll - Copy.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAll - Copy.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportAll.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAll.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportBatch.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportBatch.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportEmp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportEmp.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportEmpY.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportEmpY.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportEob.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportEob.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportEobServiceOut.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportEobServiceOut.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportHr.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportHr.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportHrIRS.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportHrIRS.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportHrPrv.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportHrPrv.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportHrPrvIRS.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportHrPrvIRS.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportHrPrvSub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportHrPrvSub.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportHrPrvSubIRS.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportHrPrvSubIRS.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportHrSub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportHrSub.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportHrSubIRS.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportHrSubIRS.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportIndDetails2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportIndDetails2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportIRS - Copy.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportIRS - Copy.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportIRS.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportIRS.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportLabRayDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportLabRayDetails.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportLabRayDetails2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportLabRayDetails2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportOnline - Copy.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOnline - Copy.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportOnline-copy-2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOnline-copy-2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportOnline.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOnline.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportOnline2 - Copy 1 - Copy.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOnline2 - Copy 1 - Copy.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportOnline2 - Copy 1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOnline2 - Copy 1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportOnline2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOnline2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportOnline500118Test.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOnline500118Test.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportOnlineAllTest.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOnlineAllTest.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportOnlinecopy500114Test.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOnlinecopy500114Test.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportOperationAdd.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOperationAdd.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportOperationAdd2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOperationAdd2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportOperationChangeClass.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOperationChangeClass.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportOperationChangeClass2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOperationChangeClass2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportOperationChangeCostCsentr.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOperationChangeCostCsentr.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportOperationChangeCostCsentr2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOperationChangeCostCsentr2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportOperationChangeName.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOperationChangeName.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportOperationChangeName2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOperationChangeName2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportOperationChangePhoto.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOperationChangePhoto.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportOperationChangePhoto2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOperationChangePhoto2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportOperationClose.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOperationClose.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportOperationClose2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOperationClose2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportOperationMissingCard.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOperationMissingCard.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportOperationMissingCard2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOperationMissingCard2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportOperationReActive.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOperationReActive.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportOperationReActive2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOperationReActive2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportOperationReplecmentCard.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOperationReplecmentCard.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportOperationReplecmentCard2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOperationReplecmentCard2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportOperationTransction.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportOperationTransction.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportPrint - Copy %282%29.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportPrint - Copy %282%29.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportPrint - TOP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportPrint - TOP.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportPrint - Copy.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportPrint - Copy.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportPrintOLD.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportPrintOLD.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportPrintPreview - TOP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportPrintPreview - TOP.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportPrintPreview.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportPrintPreview.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportPrint2222.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportPrint2222.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportPrintt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportPrintt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportPrintPreview2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportPrintPreview2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportPrint.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportPrint.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportProviderState1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportProviderState1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportProviderState2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportProviderState2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportAA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAA.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportReview.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportReview.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportSA2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportSA2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportSA - Copy.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportSA - Copy1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportSA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportSA.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportAC.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAC.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportSA2Loc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportSA2Loc.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportSC.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportSC.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportAD.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAD.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportSCLoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportSCLoc.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportSD.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportSD.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportAM.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportAM.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportSDLoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportSDLoc.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportSM.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportSM.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportSMLoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportSMLoc.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportStatement - Copy.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportStatement - Copy.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportStatement.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportStatement.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportSummaryBatch - Copy.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportSummaryBatch - Copy.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportSummaryBatch.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportSummaryBatch.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\ReportSummaryBatchPdf.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportSummaryBatchPdf.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Report.resx">
+      <DependentUpon>View Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Viewall.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Viewall.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLayer\Viewallclaim.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Viewallclaim.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewandPrint.resx">
+      <DependentUpon>ViewandPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="IMSWPF_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\background SIOS w dms 2.jpg" />
+    <Resource Include="media\call.png" />
+    <Resource Include="media\desgin 3 sios.jpg" />
+    <Resource Include="media\edit.png" />
+    <Resource Include="media\endcall.png" />
+    <Resource Include="media\login.png" />
+    <Resource Include="media\login11.png" />
+    <Resource Include="media\logo SIOS.jpg" />
+    <Resource Include="media\magnifying-glass-icon.png" />
+    <Resource Include="media\male-reporter %281%29.png" />
+    <Resource Include="media\more.png" />
+    <Resource Include="media\Pelfusion-Flat-Folder-Notification-Folder.ico" />
+    <Resource Include="media\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\Screenshot_1.png" />
+    <Resource Include="media\Screenshot_2.png" />
+    <Resource Include="media\Screenshot_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\menuwhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\menublack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\basicdata.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\approve.png" />
+    <Resource Include="media\customer-service.png" />
+    <Resource Include="media\diploma.png" />
+    <Resource Include="media\notebook.png" />
+    <Resource Include="media\printer.png" />
+    <Resource Include="media\report.png" />
+    <Resource Include="media\represent.png" />
+    <Resource Include="media\sendreq.png" />
+    <Resource Include="media\srch.png" />
+    <Resource Include="media\store.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\basicdataColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\basicdataNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\approveColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\printColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\printerNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\notebookColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\storeColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\customer-serviceColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\reportColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\messanger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\department.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\diplomaColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\editdept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\editdeptColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\deletedept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\adddept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\editemp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\addemp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\job-search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\claim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\srchcode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\attachment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\additem.png" />
+    <Resource Include="media\deleteitem.png" />
+    <Resource Include="media\edititem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\deleteemp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\newemp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\kid-complaining.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\broom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SQLSysClrTypes.12.0.x64">
+      <Visible>False</Visible>
+      <ProductName>Microsoft® System CLR Types for SQL Server® 2014 %28x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SQLSysClrTypes.12.0.x86">
+      <Visible>False</Visible>
+      <ProductName>Microsoft® System CLR Types for SQL Server® 2014 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="SAP.CrystalReports14.NET.2.0">
+      <Visible>False</Visible>
+      <ProductName>SAP Crystal Reports Runtime Engine for .NET Framework</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\Window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\customer-problem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\med.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\che.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="BarcodeLib">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.CrystalReports.Design">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.CrystalReports.Engine">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ClientDoc">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommLayer">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonControls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Controllers">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CubeDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataSetConversion">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ObjectFactory">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Prompting">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ReportDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.XmlSerialize">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportSource">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Shared">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Web">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Windows.Forms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="FirstFloor.ModernUI">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="FlashControlV71">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="itextsharp">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.OLE.Interop">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.Shell">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.Shell.Interop">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.Shell.Interop.8.0">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="ShockwaveFlashObjects">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="WpfApplication2.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Notifcation.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\operatorColor.png" />
+    <Resource Include="media\passR.png" />
+    <Resource Include="media\passRi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\online.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\ser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\left.png" />
+    <Resource Include="media\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\requests.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\minus.png" />
+    <Resource Include="media\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\Update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\picture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\tooth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\1153px-Warning_icon.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\imagesstop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\36422655-floppy-disk-icon-glassy-blue-button.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\savera.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\delllllllllllll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\Doneee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\Actions-window-close-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\custom-reports-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\eye-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\hold.png" />
+    <Resource Include="media\moving.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\Notifcation.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\Active-User.png" />
+    <Resource Include="media\Not-Active-User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\gear-47203_960_720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\review icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\Done.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\deletez.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\policy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\newitem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\edit11.png" />
+    <Resource Include="media\edit22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\edit33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\add subtract.jpg" />
+    <Resource Include="media\benefit.jpg" />
+    <Resource Include="media\class.png" />
+    <Resource Include="media\rededit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\Delete_A.png" />
+    <Resource Include="media\Refresh_A.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\Buttons\calendar_A.png" />
+    <Resource Include="media\Buttons\iconfinder_Disk_37085.png" />
+    <Resource Include="media\Buttons\iconfinder_Folder_37089.png" />
+    <Resource Include="media\Buttons\iconfinder_Graph_37091.png" />
+    <Resource Include="media\Buttons\iconfinder_Zoom_37107.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\poll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\new_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\task-notes-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\tick_blue.png" />
+    <Resource Include="media\true1.png" />
+    <Resource Include="media\true2.png" />
+    <Resource Include="media\true4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\iconfinder_edit-copy_118918.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\31370.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\benifts2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\icon3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\claim-icon-3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\Preview-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="68999.wav" />
+    <Resource Include="media\GIF\Loading.gif" />
+    <Resource Include="media\excel1.png" />
+    <Resource Include="media\pdf.png" />
+    <Resource Include="media\Rotate2.png" />
+    <Resource Include="media\search111.png" />
+    <Content Include="media\Sounds\68999.wav" />
+    <None Include="ReportAG\DataSets\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ReportAG\DataSets\DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReportAG\DataSets\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\Icon1.ico" />
+    <Resource Include="media\iconfinder_Clender.png" />
+    <Resource Include="media\iconfinder_Noti.png" />
+    <Content Include="media\Sounds\oringz-w468.mp3" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

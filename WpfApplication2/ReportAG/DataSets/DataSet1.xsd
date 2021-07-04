@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BenfTable" msprop:Generator_TableClassName="BenfTableDataTable" msprop:Generator_TableVarName="tableBenfTable" msprop:Generator_RowChangedName="BenfTableRowChanged" msprop:Generator_TablePropName="BenfTable" msprop:Generator_RowDeletingName="BenfTableRowDeleting" msprop:Generator_RowChangingName="BenfTableRowChanging" msprop:Generator_RowEvHandlerName="BenfTableRowChangeEventHandler" msprop:Generator_RowDeletedName="BenfTableRowDeleted" msprop:Generator_RowClassName="BenfTableRow" msprop:Generator_UserTableName="BenfTable" msprop:Generator_RowEvArgName="BenfTableRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="benefts" msprop:Generator_ColumnVarNameInTable="columnbenefts" msprop:Generator_ColumnPropNameInRow="benefts" msprop:Generator_ColumnPropNameInTable="beneftsColumn" msprop:Generator_UserColumnName="benefts" type="xs:string" minOccurs="0" />
+              <xs:element name="Classcode" msprop:Generator_ColumnVarNameInTable="columnClasscode" msprop:Generator_ColumnPropNameInRow="Classcode" msprop:Generator_ColumnPropNameInTable="ClasscodeColumn" msprop:Generator_UserColumnName="Classcode" type="xs:string" minOccurs="0" />
+              <xs:element name="BakGroundColor" msprop:Generator_ColumnVarNameInTable="columnBakGroundColor" msprop:Generator_ColumnPropNameInRow="BakGroundColor" msprop:Generator_ColumnPropNameInTable="BakGroundColorColumn" msprop:Generator_UserColumnName="BakGroundColor" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

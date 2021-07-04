@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfApplication2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:wpfx="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit/extended"
+        Title="SIOS" Height="763" Width="1160" Background="#3b5998" Icon="media/Screenshot_2.png"  >
+
+
+    <Grid>
+        
+     
+        <Frame x:Name="f1" Content="Frame" HorizontalAlignment="Left"   VerticalAlignment="Top"  NavigationUIVisibility="Hidden"/>
+
+    </Grid>
+
+</Window>

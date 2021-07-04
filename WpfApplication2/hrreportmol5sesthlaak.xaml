@@ -1,0 +1,48 @@
+﻿<Window x:Class="WpfApplication2.hrreportmol5sesthlaak"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication2"
+        mc:Ignorable="d"
+        Title="ملخص استهلاكات الموظفين" Height="391.458" Width="625.168" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="238*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="label" Content="ملخص استهلاكات الموظفين" HorizontalAlignment="Center" Margin="83,10,125,0" VerticalAlignment="Top" Width="311" FontSize="20" Grid.Column="2" FlowDirection="RightToLeft" HorizontalContentAlignment="Center"/>
+        <Label x:Name="label1_Copy1" Content="الي تاريخ الخدمة" HorizontalAlignment="Left" Margin="167,86,0,0" VerticalAlignment="Top" Width="109" Grid.Column="2"/>
+        <Label x:Name="label1_Copy3" Content="نوع الخدمة" HorizontalAlignment="Left" Margin="483,219,0,0" VerticalAlignment="Top" Width="79" Grid.Column="2"/>
+        <Label x:Name="label1_Copy6" Content="بيانات الموظف" HorizontalAlignment="Left" Margin="485,160,0,0" VerticalAlignment="Top" Width="91" Grid.Column="2"/>
+        <Label x:Name="label1_Copy8" Content="رقم الشركة" HorizontalAlignment="Left" Margin="484,125,0,0" VerticalAlignment="Top" Width="77" Grid.Column="2"/>
+        <Label x:Name="label1_Copy9" Content="من تاريخ الخدمة" HorizontalAlignment="Left" Margin="484,86,0,0" VerticalAlignment="Top" Width="91" Grid.Column="2"/>
+        <Button x:Name="btnExite" Content="خروج" HorizontalAlignment="Left" Margin="164,262,0,0" VerticalAlignment="Top" Width="129" Click="btnExite_Click" Height="24" TabIndex="14" Grid.Column="2"/>
+        <Button x:Name="btnPrint" Content="1-105- إستهلاك موظف" HorizontalAlignment="Left" Margin="316,262,0,0" VerticalAlignment="Top" Width="164" Click="btnPrint_Click" Height="24" TabIndex="13" Grid.Column="2" FlowDirection="RightToLeft"/>
+        <DatePicker x:Name="dpEndServes" HorizontalAlignment="Left" Margin="1,89,0,0" VerticalAlignment="Top" Width="161" Text="1/1/2021" TabIndex="3" Grid.Column="2" />
+        <DatePicker x:Name="dpStartServes" HorizontalAlignment="Left" Margin="320,88,0,0" VerticalAlignment="Top" Width="159" Text="1/1/1991" TabIndex="2" Grid.Column="2" />
+        <ComboBox x:Name="ServiceType" HorizontalAlignment="Left" Margin="319,224,0,0" VerticalAlignment="Top" Width="161" TabIndex="11" Grid.Column="2">
+            <ComboBoxItem Content="نظارات" IsSelected="True"/>
+            <ComboBoxItem Content="أسنان"/>
+            <ComboBoxItem Content="حمل وولادة"/>
+            <ComboBoxItem Content="أدوية"/>
+            <ComboBoxItem Content="مطالبات فردية"/>
+        </ComboBox>
+        <ComboBox  ItemsSource="{Binding}" x:Name="CardNumber" HorizontalAlignment="Left" Margin="321,162,0,0" VerticalAlignment="Top" Width="159" IsEditable="True" TabIndex="8" Grid.Column="2"  >
+            <TextSearch.TextPath>CARD_NO</TextSearch.TextPath>
+            <ComboBox.ItemTemplate >
+                <DataTemplate>
+                    <TextBlock Text="{Binding CARD_NO}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <CheckBox x:Name="AllCard" Content="   الأسرة" HorizontalAlignment="Left" Margin="475,193,0,0" VerticalAlignment="Top" Grid.Column="2" Width="100" Height="17"/>
+        <TextBox x:Name="CompNumber" Grid.Column="2" HorizontalAlignment="Left" Height="24" Margin="320,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="159" Text="500123" KeyDown="CompNumber_KeyDown"/>
+        <Button x:Name="btnPrint_Copy" Content="2-105 -قائمة الموظفين المفعلين" HorizontalAlignment="Left" Margin="321,305,0,0" VerticalAlignment="Top" Width="187" Height="24" Click="btnPrint_Copy_Click" TabIndex="13" Grid.Column="2" FlowDirection="RightToLeft"/>
+        <Button x:Name="btnPrint_Copy1" Content="3-105- قائمة الموظفين الموقوفين" HorizontalAlignment="Left" Margin="98,305,0,0" VerticalAlignment="Top" Width="195" Height="24" Click="btnPrint_Copy1_Click" TabIndex="13" Grid.Column="2" FlowDirection="RightToLeft"/>
+        <Button x:Name="btnPrintIRS" Content="1-105- استهلاك موظف" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="315,262,0,0" Width="164" Height="24" Click="btnPrintIRS_Click" TabIndex="13" Grid.Column="2" FlowDirection="RightToLeft"/>
+
+    </Grid>
+</Window>
